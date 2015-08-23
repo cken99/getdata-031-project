@@ -77,13 +77,13 @@ names(merged_subjects) = "subject"
 data = cbind(mean_and_std_data, merged_activities, merged_subjects)
 
 # Tidy variable names
-names(data) = gsub("^t",       "time",          names(data))
-names(data) = gsub("^f",       "frequency",     names(data))
-names(data) = gsub("Acc",      "Accelerometer", names(data))
-names(data) = gsub("Mag",      "Magnitude",     names(data))
-names(data) = gsub("BodyBody",  "Body",          names(data))
-names(data) = gsub("-std\\(\\)", "Std",              names(data))
-names(data) = gsub("-mean\\(\\)", "Mean",              names(data))
+names(data) = gsub("^t",          "time",          names(data))
+names(data) = gsub("^f",          "frequency",     names(data))
+names(data) = gsub("Acc",         "Accelerometer", names(data))
+names(data) = gsub("Mag",         "Magnitude",     names(data))
+names(data) = gsub("BodyBody",    "Body",          names(data))
+names(data) = gsub("-std\\(\\)",  "Std",           names(data))
+names(data) = gsub("-mean\\(\\)", "Mean",          names(data))
 
 #
 # 5. From the data set in step 4, create a second, independent tidy 
